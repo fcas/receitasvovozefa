@@ -22,6 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.receitasvovozefa.MinhasReceitas"
+            android:label="@string/title_activity_minhas_receitas" >
+        </activity>
+        <activity
+            android:name="com.example.receitasvovozefa.Compartilhar"
+            android:label="@string/title_activity_compartilhar" >
+        </activity>
+        <activity
+            android:name="com.example.receitasvovozefa.Splash"
+            android:label="@string/title_activity_splash" >
+        </activity>
     </application>
 
 </manifest>

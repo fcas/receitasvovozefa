@@ -34,6 +34,14 @@
             android:name="com.example.receitasvovozefa.Splash"
             android:label="@string/title_activity_splash" >
         </activity>
+        <activity
+            android:name="com.example.receitasvovozefa.ListaReceitas"
+            android:label="@string/title_activity_lista_receitas" >
+        </activity>
+        <activity
+            android:name="com.example.receitasvovozefa.BuscarReceitas"
+            android:label="@string/title_activity_buscar_receitas" >
+        </activity>
     </application>
 
 </manifest>

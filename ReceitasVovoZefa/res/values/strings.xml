@@ -7,5 +7,7 @@
     <string name="title_activity_minhas_receitas">MinhasReceitas</string>
     <string name="title_activity_compartilhar">Compartilhar</string>
     <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_lista_receitas">ListaReceitas</string>
+    <string name="title_activity_buscar_receitas">BuscarReceitas</string>
 
 </resources>

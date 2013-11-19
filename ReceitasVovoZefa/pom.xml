@@ -27,10 +27,10 @@
 </properties>
 <build>
 
-<sourceDirectory>${project.basedir}/ReceitasVovoZefa/src</sourceDirectory>
-  <outputDirectory>ReceitasVovoZefa/bin/classes</outputDirectory>
- <testSourceDirectory>${project.basedir}/ReceitasVovoZefa/tests/</testSourceDirectory>
-<testOutputDirectory>ReceitasVovoZefa/bin/classes</testOutputDirectory>
+<sourceDirectory>.</sourceDirectory>
+  <outputDirectory>target</outputDirectory>
+ <testSourceDirectory>tests</testSourceDirectory>
+<testOutputDirectory>target/test-classes</testOutputDirectory>
 <defaultGoal>install</defaultGoal>
    <pluginManagement>
         <plugins>
@@ -70,6 +70,11 @@
         <configuration>
             <source>1.7</source>
             <target>1.7</target>
+	<includes>
+            <include>src/**/*.java</include>
+            <include>gen/**/*.java</include>
+	    <include>tests/*.java</include>
+        </includes>
         </configuration>
     </plugin>
 
@@ -78,9 +83,9 @@
             <groupId>com.jayway.maven.plugins.android.generation2</groupId>
             <artifactId>maven-android-plugin</artifactId>
             <configuration>
-<androidManifestFile>${project.basedir}/ReceitasVovoZefa/AndroidManifest.xml</androidManifestFile>
+<androidManifestFile>AndroidManifest.xml</androidManifestFile>
                 <assetsDirectory>ignored</assetsDirectory>
-                <resourceDirectory>${project.basedir}/ReceitasVovoZefa/res</resourceDirectory>
+                <resourceDirectory>res</resourceDirectory>
                 <nativeLibrariesDirectory>ignored</nativeLibrariesDirectory>                
 <sdk>
                     <path>${env.ANDROID_HOME}</path>
@@ -89,7 +94,44 @@
                 <deleteConflictingFiles>true</deleteConflictingFiles>
             </configuration>
             <extensions>true</extensions>
-        </plugin> 
+        </plugin>
+
+<plugin>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>build-helper-maven-plugin</artifactId>
+    <executions>
+        <execution>
+            <phase>generate-sources</phase>
+            <goals><goal>add-source</goal></goals>
+            <configuration>
+                <sources>
+                     <source>gen</source>
+                </sources>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+ 
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+    <executions>
+        <execution>
+            <id>default-jar</id>
+            <phase>package</phase>
+            <goals>
+                <goal>jar</goal>
+            </goals>
+            <configuration>  
+                <excludes>
+                    <exclude>**/BuildConfig.class</exclude>
+                    <exclude>**/R.class</exclude>
+                </excludes>
+            </configuration>
+        </execution>
+    </executions>
+</plugin>
+
 	</plugins>
 </build>
 </project>

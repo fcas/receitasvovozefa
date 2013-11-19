@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 
+
 public class ListaReceitas extends Activity {
 
 	@Override

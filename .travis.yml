@@ -11,5 +11,4 @@ before_install:
 - export PATH=$GRADLE_HOME/bin:$PATH
 
 after_success:
-- gradle cobertura
-- gradle coveralls
+- mvn clean cobertura:cobertura coveralls:cobertura

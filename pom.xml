@@ -57,11 +57,11 @@
                     <version>2.0.1</version>
                     <configuration>
                         <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
-			 <sourceDirectories>
-				<List>/home/travis/build/gen/com/example/receitasvovozefa</List>
-				<List>/home/travis/build/src</List>
-				<List>/home/travis/build/src/test</List>	
-			 </sourceDirectories>
+			 <includes>
+                            <include>src/activities/*.java</include>
+                            <include>gen/com/example/receitasvovozefa/*.java</include>
+                            <include>src/test/*.java</include>
+                        </includes>
 		    </configuration>
                 </plugin>
 

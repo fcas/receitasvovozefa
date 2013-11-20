@@ -44,12 +44,7 @@
 		        <format>xml</format>
 		        <maxmem>256m</maxmem>
 		        <aggregate>true</aggregate>
-			<sourceDirectories>
-                                <List>gen/com/example/receitasvovozefa</List>
-                                <List>src</List>
-                                <List>src/test</List>
-                         </sourceDirectories>
-		</configuration>
+			</configuration>
 		</plugin>
 		<plugin>
                     <groupId>org.eluder.coveralls</groupId>
@@ -57,11 +52,11 @@
                     <version>2.0.1</version>
                     <configuration>
                         <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
-			 <includes>
-                            <include>src/activities/*.java</include>
-                            <include>gen/com/example/receitasvovozefa/*.java</include>
-                            <include>src/test/*.java</include>
-                        </includes>
+			<sourceDirectories>
+				<List>$PWD/src</List>
+				<List>$PWD/src/test</List>
+				<List>$PWD/gen</List>
+			</sourceDirectories>
 		    </configuration>
                 </plugin>
 

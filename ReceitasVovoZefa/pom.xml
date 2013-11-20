@@ -72,12 +72,7 @@
 		        <configuration>
 		            <source>1.7</source>
 		            <target>1.7</target>
-			<includes>
-		            <include>src/activities/*.java</include>
-			    <include>gen/com/example/receitasvovozefa/*.java</include>
-			    <include>src/test/*.java</include>
-		        </includes>
-		        </configuration>
+			 </configuration>
 		    </plugin>
 
 		<plugin>

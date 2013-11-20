@@ -1,4 +1,4 @@
-package activity;
+package activities;
 
 import com.example.receitasvovozefa.*;
 import android.os.Bundle;

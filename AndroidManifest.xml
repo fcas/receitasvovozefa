@@ -7,6 +7,11 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="18" />
+    
+    
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.example.receitasvovozefa" />
 
     <application
         android:allowBackup="true"
@@ -42,6 +47,10 @@
             android:name="activities.BuscarReceitas"
             android:label="@string/title_activity_buscar_receitas" >
         </activity>
+        
+         <uses-library android:name="android.test.runner" />
+        
     </application>
+
 
 </manifest>

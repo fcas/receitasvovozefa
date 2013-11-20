@@ -27,7 +27,7 @@
 </properties>
 
 <build>
-	<sourceDirectory>.</sourceDirectory>
+	<sourceDirectory>src</sourceDirectory>
 	  <outputDirectory>target</outputDirectory>
 	 <testSourceDirectory>src/test</testSourceDirectory>
 	<testOutputDirectory>target/test-classes</testOutputDirectory>

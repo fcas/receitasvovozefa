@@ -1,6 +1,6 @@
 package activity;
 
-import dimap.ufrn.ms.R;
+import com.example.receitasvovozefa.*;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

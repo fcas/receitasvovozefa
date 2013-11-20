@@ -58,9 +58,9 @@
                     <configuration>
                         <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
 			 <sourceDirectories>
-				<List>gen/com/example/receitasvovozefa</List>
-				<List>src</List>
-				<List>src/test</List>	
+				<List>/home/travis/build/gen/com/example/receitasvovozefa</List>
+				<List>/home/travis/build/src</List>
+				<List>/home/travis/build/src/test</List>	
 			 </sourceDirectories>
 		    </configuration>
                 </plugin>

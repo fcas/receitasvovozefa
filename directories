@@ -1,0 +1,3 @@
+src/activities/*.java
+gen/com/example/receitasvovozefa/*.java
+src/test/*.java

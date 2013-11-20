@@ -35,14 +35,6 @@
 
    <pluginManagement>
         <plugins>
-		 <plugin>
-                    <groupId>org.eluder.coveralls</groupId>
-                    <artifactId>coveralls-maven-plugin</artifactId>
-                    <version>2.0.1</version>
-                    <configuration>
-                        <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
-                    </configuration>
-                </plugin>
 
 		<plugin>
 		    <groupId>org.codehaus.mojo</groupId>
@@ -51,10 +43,27 @@
 		    <configuration>
 		        <format>xml</format>
 		        <maxmem>256m</maxmem>
-		        <!-- aggregated reports for multi-module projects -->
 		        <aggregate>true</aggregate>
-		    </configuration>
+			<sourceDirectories>
+                                <List>gen/com/example/receitasvovozefa</List>
+                                <List>src</List>
+                                <List>src/test</List>
+                         </sourceDirectories>
+		</configuration>
 		</plugin>
+		<plugin>
+                    <groupId>org.eluder.coveralls</groupId>
+                    <artifactId>coveralls-maven-plugin</artifactId>
+                    <version>2.0.1</version>
+                    <configuration>
+                        <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
+			 <sourceDirectories>
+				<List>gen/com/example/receitasvovozefa</List>
+				<List>src</List>
+				<List>src/test</List>	
+			 </sourceDirectories>
+		    </configuration>
+                </plugin>
 
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>

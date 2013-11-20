@@ -8,49 +8,41 @@
   <artifactId>ReceitasVovoZefa</artifactId>
   <version>1.0</version>
 
-<dependencies>
-<dependency>
-	<groupId>com.google.android</groupId>
-	<artifactId>android</artifactId>
-	<version>4.1.1.4</version>
-</dependency>
-            
-<dependency>
-	<groupId>junit</groupId>
-	<artifactId>junit</artifactId>
-	<version>4.11</version>
-</dependency>
-            
-</dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>4.1.1.4</version>
+		</dependency>    
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+	</dependencies>
+
 <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 </properties>
-<build>
 
-<sourceDirectory>${project.basedir}/ReceitasVovoZefa/src</sourceDirectory>
-  <outputDirectory>ReceitasVovoZefa/bin/classes</outputDirectory>
- <testSourceDirectory>${project.basedir}/ReceitasVovoZefa/tests/</testSourceDirectory>
-<testOutputDirectory>ReceitasVovoZefa/bin/classes</testOutputDirectory>
-<defaultGoal>install</defaultGoal>
+<build>
+	<sourceDirectory>src</sourceDirectory>
+	  <outputDirectory>target</outputDirectory>
+	 <testSourceDirectory>src/test</testSourceDirectory>
+	<testOutputDirectory>target/test-classes</testOutputDirectory>
+	<defaultGoal>install</defaultGoal>
+
    <pluginManagement>
         <plugins>
-            <plugin>
-                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>android-maven-plugin</artifactId>
-                <version>3.7.0</version>
-                <extensions>true</extensions>
-            </plugin>
-        </plugins>
-    </pluginManagement>
-<plugins>
-		<plugin>
-		    <groupId>org.eluder.coveralls</groupId>
-		    <artifactId>coveralls-maven-plugin</artifactId>
-		    <version>2.0.1</version>
-		    <configuration>
-		        <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
-		    </configuration>
-		</plugin>
+		 <plugin>
+                    <groupId>org.eluder.coveralls</groupId>
+                    <artifactId>coveralls-maven-plugin</artifactId>
+                    <version>2.0.1</version>
+                    <configuration>
+                        <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
+                    </configuration>
+                </plugin>
 
 		<plugin>
 		    <groupId>org.codehaus.mojo</groupId>
@@ -64,32 +56,76 @@
 		    </configuration>
 		</plugin>
 
-<plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.0</version>
-        <configuration>
-            <source>1.7</source>
-            <target>1.7</target>
-        </configuration>
-    </plugin>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>3.7.0</version>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </pluginManagement>
 
+	<plugins>
+		<plugin>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <version>3.0</version>
+		        <configuration>
+		            <source>1.7</source>
+		            <target>1.7</target>
+			 </configuration>
+		    </plugin>
 
-<plugin>
-            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-            <artifactId>maven-android-plugin</artifactId>
-            <configuration>
-<androidManifestFile>${project.basedir}/ReceitasVovoZefa/AndroidManifest.xml</androidManifestFile>
-                <assetsDirectory>ignored</assetsDirectory>
-                <resourceDirectory>${project.basedir}/ReceitasVovoZefa/res</resourceDirectory>
-                <nativeLibrariesDirectory>ignored</nativeLibrariesDirectory>                
-<sdk>
-                    <path>${env.ANDROID_HOME}</path>
-                    <platform>${android.platform}</platform>
-                </sdk>
-                <deleteConflictingFiles>true</deleteConflictingFiles>
-            </configuration>
-            <extensions>true</extensions>
-        </plugin> 
+		<plugin>
+	            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+	            <artifactId>maven-android-plugin</artifactId>
+	            <configuration>
+			<androidManifestFile>AndroidManifest.xml</androidManifestFile>
+	                <assetsDirectory>ignored</assetsDirectory>
+	                <resourceDirectory>res</resourceDirectory>
+	                <nativeLibrariesDirectory>ignored</nativeLibrariesDirectory>                
+			<sdk>
+	                    <path>${env.ANDROID_HOME}</path>
+	                    <platform>${android.platform}</platform>
+	                </sdk>
+	                <deleteConflictingFiles>true</deleteConflictingFiles>
+        	    </configuration>
+	            <extensions>true</extensions>
+        	</plugin>
+
+		<plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>build-helper-maven-plugin</artifactId>
+		    <executions>
+		        <execution>
+		            <phase>generate-sources</phase>
+		            <goals><goal>add-source</goal></goals>
+		            <configuration>
+		                <sources>
+		                     <source>gen</source>
+                		</sources>
+		            </configuration>
+		        </execution>
+		    </executions>
+		</plugin>
+ 
+		<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-jar-plugin</artifactId>
+		    <executions>
+		        <execution>
+		            <id>default-jar</id>
+		            <phase>package</phase>
+		            <goals>
+		                <goal>jar</goal>
+		            </goals>
+	            <configuration>
+        	        <excludes>
+                	    <exclude>gen/com/example/receitasvovozefa/*.class</exclude>
+	      	        </excludes>
+	            </configuration>
+		        </execution>
+			    </executions>
+		</plugin>
 	</plugins>
 </build>
 </project>

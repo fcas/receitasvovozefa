@@ -1,32 +1,32 @@
-package com.example.receitasvovozefa;
+package activity;
 
+import dimap.ufrn.ms.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 
-public class Splash extends Activity implements Runnable{
+public class Compartilhar extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_splash2);
-		
-		Handler handler = new Handler();
-		handler.postDelayed(this, 3000);
-	}
-
-	public void run() {
-		startActivity(new Intent(this, MainActivity.class));
-		finish();
+		setContentView(R.layout.activity_compartilhar);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.splash2, menu);
+		getMenuInflater().inflate(R.menu.compartilhar, menu);
 		return true;
+	}
+	
+	@Override
+	public void onBackPressed() {
+		Intent voltaIntent = new Intent();
+		voltaIntent.setClass(Compartilhar.this, MainActivity.class);
+		startActivity(voltaIntent);
+		finish();
 	}
 
 }

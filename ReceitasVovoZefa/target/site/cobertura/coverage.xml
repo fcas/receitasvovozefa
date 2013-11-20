@@ -1,37 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.0" branch-rate="1.0" lines-covered="0" lines-valid="107" branches-covered="0" branches-valid="0" complexity="0.0" version="1.9.4.1" timestamp="1384887964117">
+<coverage line-rate="0.0" branch-rate="1.0" lines-covered="0" lines-valid="14" branches-covered="0" branches-valid="0" complexity="0.0" version="1.9.4.1" timestamp="1384910015308">
 	<sources>
 		<source>--source</source>
 		<source>/root/git/fcas/receitasvovozefa/ReceitasVovoZefa</source>
 		<source>/root/git/fcas/receitasvovozefa/ReceitasVovoZefa/gen</source>
 	</sources>
 	<packages>
-		<package name="" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-			<classes>
-				<class name="Teste" filename="Teste.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="6" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="test" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="10" hits="0" branch="false"/>
-								<line number="11" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="6" hits="0" branch="false"/>
-						<line number="10" hits="0" branch="false"/>
-						<line number="11" hits="0" branch="false"/>
-					</lines>
-				</class>
-			</classes>
-		</package>
 		<package name="com.example.receitasvovozefa" line-rate="0.0" branch-rate="1.0" complexity="0.0">
 			<classes>
 				<class name="com.example.receitasvovozefa.BuildConfig" filename="com/example/receitasvovozefa/BuildConfig.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
@@ -44,346 +20,6 @@
 					</methods>
 					<lines>
 						<line number="4" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.BuscarReceitas" filename="com/example/receitasvovozefa/BuscarReceitas.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="9" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onBackPressed" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="26" hits="0" branch="false"/>
-								<line number="27" hits="0" branch="false"/>
-								<line number="28" hits="0" branch="false"/>
-								<line number="29" hits="0" branch="false"/>
-								<line number="30" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreate" signature="(Landroid/os/Bundle;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="13" hits="0" branch="false"/>
-								<line number="14" hits="0" branch="false"/>
-								<line number="15" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreateOptionsMenu" signature="(Landroid/view/Menu;)Z" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="20" hits="0" branch="false"/>
-								<line number="21" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="9" hits="0" branch="false"/>
-						<line number="13" hits="0" branch="false"/>
-						<line number="14" hits="0" branch="false"/>
-						<line number="15" hits="0" branch="false"/>
-						<line number="20" hits="0" branch="false"/>
-						<line number="21" hits="0" branch="false"/>
-						<line number="26" hits="0" branch="false"/>
-						<line number="27" hits="0" branch="false"/>
-						<line number="28" hits="0" branch="false"/>
-						<line number="29" hits="0" branch="false"/>
-						<line number="30" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.Compartilhar" filename="com/example/receitasvovozefa/Compartilhar.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="8" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onBackPressed" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="25" hits="0" branch="false"/>
-								<line number="26" hits="0" branch="false"/>
-								<line number="27" hits="0" branch="false"/>
-								<line number="28" hits="0" branch="false"/>
-								<line number="29" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreate" signature="(Landroid/os/Bundle;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="12" hits="0" branch="false"/>
-								<line number="13" hits="0" branch="false"/>
-								<line number="14" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreateOptionsMenu" signature="(Landroid/view/Menu;)Z" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="19" hits="0" branch="false"/>
-								<line number="20" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="8" hits="0" branch="false"/>
-						<line number="12" hits="0" branch="false"/>
-						<line number="13" hits="0" branch="false"/>
-						<line number="14" hits="0" branch="false"/>
-						<line number="19" hits="0" branch="false"/>
-						<line number="20" hits="0" branch="false"/>
-						<line number="25" hits="0" branch="false"/>
-						<line number="26" hits="0" branch="false"/>
-						<line number="27" hits="0" branch="false"/>
-						<line number="28" hits="0" branch="false"/>
-						<line number="29" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.ListaReceitas" filename="com/example/receitasvovozefa/ListaReceitas.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="9" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onBackPressed" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="26" hits="0" branch="false"/>
-								<line number="27" hits="0" branch="false"/>
-								<line number="28" hits="0" branch="false"/>
-								<line number="29" hits="0" branch="false"/>
-								<line number="30" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreate" signature="(Landroid/os/Bundle;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="13" hits="0" branch="false"/>
-								<line number="14" hits="0" branch="false"/>
-								<line number="15" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreateOptionsMenu" signature="(Landroid/view/Menu;)Z" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="20" hits="0" branch="false"/>
-								<line number="21" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="9" hits="0" branch="false"/>
-						<line number="13" hits="0" branch="false"/>
-						<line number="14" hits="0" branch="false"/>
-						<line number="15" hits="0" branch="false"/>
-						<line number="20" hits="0" branch="false"/>
-						<line number="21" hits="0" branch="false"/>
-						<line number="26" hits="0" branch="false"/>
-						<line number="27" hits="0" branch="false"/>
-						<line number="28" hits="0" branch="false"/>
-						<line number="29" hits="0" branch="false"/>
-						<line number="30" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.MainActivity" filename="com/example/receitasvovozefa/MainActivity.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="10" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreate" signature="(Landroid/os/Bundle;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="19" hits="0" branch="false"/>
-								<line number="20" hits="0" branch="false"/>
-								<line number="21" hits="0" branch="false"/>
-								<line number="22" hits="0" branch="false"/>
-								<line number="23" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreateOptionsMenu" signature="(Landroid/view/Menu;)Z" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="87" hits="0" branch="false"/>
-								<line number="88" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="setButtons" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="26" hits="0" branch="false"/>
-								<line number="27" hits="0" branch="false"/>
-								<line number="39" hits="0" branch="false"/>
-								<line number="40" hits="0" branch="false"/>
-								<line number="52" hits="0" branch="false"/>
-								<line number="53" hits="0" branch="false"/>
-								<line number="65" hits="0" branch="false"/>
-								<line number="66" hits="0" branch="false"/>
-								<line number="74" hits="0" branch="false"/>
-								<line number="75" hits="0" branch="false"/>
-								<line number="82" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="10" hits="0" branch="false"/>
-						<line number="19" hits="0" branch="false"/>
-						<line number="20" hits="0" branch="false"/>
-						<line number="21" hits="0" branch="false"/>
-						<line number="22" hits="0" branch="false"/>
-						<line number="23" hits="0" branch="false"/>
-						<line number="26" hits="0" branch="false"/>
-						<line number="27" hits="0" branch="false"/>
-						<line number="39" hits="0" branch="false"/>
-						<line number="40" hits="0" branch="false"/>
-						<line number="52" hits="0" branch="false"/>
-						<line number="53" hits="0" branch="false"/>
-						<line number="65" hits="0" branch="false"/>
-						<line number="66" hits="0" branch="false"/>
-						<line number="74" hits="0" branch="false"/>
-						<line number="75" hits="0" branch="false"/>
-						<line number="82" hits="0" branch="false"/>
-						<line number="87" hits="0" branch="false"/>
-						<line number="88" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.MainActivity$1" filename="com/example/receitasvovozefa/MainActivity.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="(Lcom/example/receitasvovozefa/MainActivity;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="27" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onClick" signature="(Landroid/view/View;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="31" hits="0" branch="false"/>
-								<line number="32" hits="0" branch="false"/>
-								<line number="34" hits="0" branch="false"/>
-								<line number="35" hits="0" branch="false"/>
-								<line number="36" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="27" hits="0" branch="false"/>
-						<line number="31" hits="0" branch="false"/>
-						<line number="32" hits="0" branch="false"/>
-						<line number="34" hits="0" branch="false"/>
-						<line number="35" hits="0" branch="false"/>
-						<line number="36" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.MainActivity$2" filename="com/example/receitasvovozefa/MainActivity.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="(Lcom/example/receitasvovozefa/MainActivity;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="40" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onClick" signature="(Landroid/view/View;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="44" hits="0" branch="false"/>
-								<line number="45" hits="0" branch="false"/>
-								<line number="47" hits="0" branch="false"/>
-								<line number="48" hits="0" branch="false"/>
-								<line number="49" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="40" hits="0" branch="false"/>
-						<line number="44" hits="0" branch="false"/>
-						<line number="45" hits="0" branch="false"/>
-						<line number="47" hits="0" branch="false"/>
-						<line number="48" hits="0" branch="false"/>
-						<line number="49" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.MainActivity$3" filename="com/example/receitasvovozefa/MainActivity.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="(Lcom/example/receitasvovozefa/MainActivity;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="53" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onClick" signature="(Landroid/view/View;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="57" hits="0" branch="false"/>
-								<line number="58" hits="0" branch="false"/>
-								<line number="60" hits="0" branch="false"/>
-								<line number="61" hits="0" branch="false"/>
-								<line number="62" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="53" hits="0" branch="false"/>
-						<line number="57" hits="0" branch="false"/>
-						<line number="58" hits="0" branch="false"/>
-						<line number="60" hits="0" branch="false"/>
-						<line number="61" hits="0" branch="false"/>
-						<line number="62" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.MainActivity$4" filename="com/example/receitasvovozefa/MainActivity.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="(Lcom/example/receitasvovozefa/MainActivity;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="66" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onClick" signature="(Landroid/view/View;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="70" hits="0" branch="false"/>
-								<line number="71" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="66" hits="0" branch="false"/>
-						<line number="70" hits="0" branch="false"/>
-						<line number="71" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.MainActivity$5" filename="com/example/receitasvovozefa/MainActivity.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="(Lcom/example/receitasvovozefa/MainActivity;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="75" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onClick" signature="(Landroid/view/View;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="78" hits="0" branch="false"/>
-								<line number="79" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="75" hits="0" branch="false"/>
-						<line number="78" hits="0" branch="false"/>
-						<line number="79" hits="0" branch="false"/>
-					</lines>
-				</class>
-				<class name="com.example.receitasvovozefa.MinhasReceitas" filename="com/example/receitasvovozefa/MinhasReceitas.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
-					<methods>
-						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="7" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreate" signature="(Landroid/os/Bundle;)V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="11" hits="0" branch="false"/>
-								<line number="12" hits="0" branch="false"/>
-								<line number="13" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreateOptionsMenu" signature="(Landroid/view/Menu;)Z" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="18" hits="0" branch="false"/>
-								<line number="19" hits="0" branch="false"/>
-							</lines>
-						</method>
-					</methods>
-					<lines>
-						<line number="7" hits="0" branch="false"/>
-						<line number="11" hits="0" branch="false"/>
-						<line number="12" hits="0" branch="false"/>
-						<line number="13" hits="0" branch="false"/>
-						<line number="18" hits="0" branch="false"/>
-						<line number="19" hits="0" branch="false"/>
 					</lines>
 				</class>
 				<class name="com.example.receitasvovozefa.R" filename="com/example/receitasvovozefa/R.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
@@ -496,48 +132,28 @@
 						<line number="77" hits="0" branch="false"/>
 					</lines>
 				</class>
-				<class name="com.example.receitasvovozefa.Splash" filename="com/example/receitasvovozefa/Splash.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+			</classes>
+		</package>
+		<package name="test" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+			<classes>
+				<class name="test.Teste" filename="test/Teste.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
 					<methods>
 						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="9" hits="0" branch="false"/>
+								<line number="7" hits="0" branch="false"/>
 							</lines>
 						</method>
-						<method name="onCreate" signature="(Landroid/os/Bundle;)V" line-rate="0.0" branch-rate="1.0">
+						<method name="test" signature="()V" line-rate="0.0" branch-rate="1.0">
 							<lines>
-								<line number="13" hits="0" branch="false"/>
-								<line number="14" hits="0" branch="false"/>
-								<line number="16" hits="0" branch="false"/>
-								<line number="17" hits="0" branch="false"/>
-								<line number="18" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="onCreateOptionsMenu" signature="(Landroid/view/Menu;)Z" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="28" hits="0" branch="false"/>
-								<line number="29" hits="0" branch="false"/>
-							</lines>
-						</method>
-						<method name="run" signature="()V" line-rate="0.0" branch-rate="1.0">
-							<lines>
-								<line number="21" hits="0" branch="false"/>
-								<line number="22" hits="0" branch="false"/>
-								<line number="23" hits="0" branch="false"/>
+								<line number="11" hits="0" branch="false"/>
+								<line number="12" hits="0" branch="false"/>
 							</lines>
 						</method>
 					</methods>
 					<lines>
-						<line number="9" hits="0" branch="false"/>
-						<line number="13" hits="0" branch="false"/>
-						<line number="14" hits="0" branch="false"/>
-						<line number="16" hits="0" branch="false"/>
-						<line number="17" hits="0" branch="false"/>
-						<line number="18" hits="0" branch="false"/>
-						<line number="21" hits="0" branch="false"/>
-						<line number="22" hits="0" branch="false"/>
-						<line number="23" hits="0" branch="false"/>
-						<line number="28" hits="0" branch="false"/>
-						<line number="29" hits="0" branch="false"/>
+						<line number="7" hits="0" branch="false"/>
+						<line number="11" hits="0" branch="false"/>
+						<line number="12" hits="0" branch="false"/>
 					</lines>
 				</class>
 			</classes>

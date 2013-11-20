@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.receitasvovozefa.Splash"
+            android:name="activities.Splash"
             android:label="@string/title_activity_splash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,23 +23,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.receitasvovozefa.MinhasReceitas"
+            android:name="activities.MinhasReceitas"
             android:label="@string/title_activity_minhas_receitas" >
         </activity>
         <activity
-            android:name="com.example.receitasvovozefa.Compartilhar"
+            android:name="activities.Compartilhar"
             android:label="@string/title_activity_compartilhar" >
         </activity>
         <activity
-            android:name="com.example.receitasvovozefa.MainActivity"
+            android:name="activities.MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.example.receitasvovozefa.ListaReceitas"
+            android:name="activities.ListaReceitas"
             android:label="@string/title_activity_lista_receitas" >
         </activity>
         <activity
-            android:name="com.example.receitasvovozefa.BuscarReceitas"
+            android:name="activities.BuscarReceitas"
             android:label="@string/title_activity_buscar_receitas" >
         </activity>
     </application>

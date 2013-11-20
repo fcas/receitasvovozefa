@@ -53,9 +53,9 @@
                     <configuration>
                         <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
 			<sourceDirectories>
-				<List>$PWD/src</List>
-				<List>$PWD/src/test</List>
-				<List>$PWD/gen</List>
+				<List>src/</List>
+				<List>src/test/</List>
+				<List>gen/</List>
 			</sourceDirectories>
 		    </configuration>
                 </plugin>

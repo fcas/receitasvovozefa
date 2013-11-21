@@ -1,5 +1,8 @@
 package test;
 
+import org.junit.After;
+import org.junit.Before;
+
 import activities.MainActivity;
 import android.content.Intent;
 import android.test.ActivityUnitTestCase;
@@ -13,12 +16,12 @@ public class RTest extends ActivityUnitTestCase<MainActivity> {
 	MainActivity mainActivity;
 
 	TextView textNome;
-
-	public RTest() {
+	
+	public RTest() throws Exception {
 		super(MainActivity.class);
 	}
 
-	@Override
+	@Before
 	protected void setUp() throws Exception {
 		super.setUp();
 
@@ -30,7 +33,7 @@ public class RTest extends ActivityUnitTestCase<MainActivity> {
 		textNome = (TextView) mainActivity.findViewById(R.id.textView1);
 	}
 
-	@Override
+	@After
 	protected void tearDown() throws Exception {
 		super.tearDown();
 	}

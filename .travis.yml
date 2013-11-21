@@ -11,5 +11,10 @@ before_install:
 - export GRADLE_HOME=$PWD/gradle-1.7
 - export PATH=$GRADLE_HOME/bin:$PATH
 
+- wget http://dl.google.com/android/android-sdk_r18-linux.tgz
+- tar -zxf android-sdk_r18-linux.tgz
+- export ANDROID_HOME=`pwd`/android-sdk-linux
+- export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+- android update sdk --filter 1,2,9 --no-ui --force
 after_success:
 - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:cobertura

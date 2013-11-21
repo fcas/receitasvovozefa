@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: test.RTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.239 sec <<< FAILURE!
-warning(junit.framework.TestSuite$1)  Time elapsed: 0.007 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.095 sec <<< FAILURE!
+warning(junit.framework.TestSuite$1)  Time elapsed: 0.008 sec  <<< FAILURE!
 junit.framework.AssertionFailedError: Exception in constructor: testTextView (java.lang.RuntimeException: Stub!
 	at android.test.InstrumentationTestCase.<init>(InstrumentationTestCase.java:5)
 	at android.test.ActivityTestCase.<init>(ActivityTestCase.java:5)
 	at android.test.ActivityUnitTestCase.<init>(ActivityUnitTestCase.java:5)
-	at test.RTest.<init>(RTest.java:18)
+	at test.RTest.<init>(RTest.java:21)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

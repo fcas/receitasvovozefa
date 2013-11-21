@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="1" time="0.239" errors="0" skipped="0" tests="1" name="test.RTest">
+<testsuite failures="1" time="0.095" errors="0" skipped="0" tests="1" name="test.RTest">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64"/>
@@ -58,12 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.007" classname="junit.framework.TestSuite$1" name="warning">
+  <testcase time="0.009" classname="junit.framework.TestSuite$1" name="warning">
     <failure message="Exception in constructor: testTextView (java.lang.RuntimeException: Stub!
 	at android.test.InstrumentationTestCase.&lt;init&gt;(InstrumentationTestCase.java:5)
 	at android.test.ActivityTestCase.&lt;init&gt;(ActivityTestCase.java:5)
 	at android.test.ActivityUnitTestCase.&lt;init&gt;(ActivityUnitTestCase.java:5)
-	at test.RTest.&lt;init&gt;(RTest.java:18)
+	at test.RTest.&lt;init&gt;(RTest.java:21)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -94,7 +94,7 @@
 	at android.test.InstrumentationTestCase.&lt;init&gt;(InstrumentationTestCase.java:5)
 	at android.test.ActivityTestCase.&lt;init&gt;(ActivityTestCase.java:5)
 	at android.test.ActivityUnitTestCase.&lt;init&gt;(ActivityUnitTestCase.java:5)
-	at test.RTest.&lt;init&gt;(RTest.java:18)
+	at test.RTest.&lt;init&gt;(RTest.java:21)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

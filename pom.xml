@@ -4,9 +4,18 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.codehaus.mojo</groupId>
+  <groupId>com.tes.package</groupId>
   <artifactId>ReceitasVovoZefa</artifactId>
   <version>1.0</version>
+
+ <packaging>pom</packaging>
+ 
+  <modules>
+	<module>src/pom.xml</module>
+	<module>lib/pom.xml</module>      
+	<module>test/pom.xml</module>
+  </modules>
+
 
 <dependencies>
 		<dependency>
@@ -25,7 +34,7 @@
 		 <dependency>
                       <groupId>com.google.android</groupId>
                       <artifactId>android-test</artifactId>
-                      <version>2.3.3</version>
+                      <version>4.1.1.4</version>
 			 <scope>provided</scope>
                  </dependency>
 
@@ -61,8 +70,7 @@
 			<artifactId>robolectric</artifactId>
 			<version>2.0-alpha-2</version>
 		</dependency>
-                        
-    
+                     
 	</dependencies>
 
 <properties>
@@ -108,9 +116,10 @@
                 <artifactId>android-maven-plugin</artifactId>
                 <version>3.7.0</version>
 		<configuration>
-			<test>
-		            <testSize>small</testSize>
-		        </test>
+		  <sdk>
+                      <path>${env.ANDROID_HOME}</path>
+                      <platform>18</platform>
+                  </sdk>
 		</configuration>
                 <extensions>true</extensions>
             </plugin>
@@ -135,16 +144,11 @@
 		<plugin>
 	            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
 	            <artifactId>maven-android-plugin</artifactId>
-	            <configuration>
-			<androidManifestFile>AndroidManifest.xml</androidManifestFile>
-	                <assetsDirectory>ignored</assetsDirectory>
-	                <resourceDirectory>res</resourceDirectory>
-	                <nativeLibrariesDirectory>ignored</nativeLibrariesDirectory>                
+	            <configuration>                
 			<sdk>
 	                    <path>${env.ANDROID_HOME}</path>
 	                    <platform>${android.platform}</platform>
 	                </sdk>
-		             <deleteConflictingFiles>true</deleteConflictingFiles>
         	    </configuration>
 	            <extensions>true</extensions>
         	</plugin>
@@ -185,4 +189,37 @@
 		</plugin>
 	</plugins>
 </build>
+
+<profiles>
+      <!-- MSOURCES-13 related workaround overriding super-pom.
+           http://blog.peterlynch.ca/2010/05/maven-how-to-prevent-generate-sources.html -->
+      <profile>
+          <id>release-profile</id>
+          <activation>
+              <property>
+                  <name>performRelease</name>
+                  <value>true</value>
+              </property>
+          </activation>
+          <build>
+              <plugins>
+                  <plugin>
+                      <inherited>true</inherited>
+                      <artifactId>maven-source-plugin</artifactId>
+                      <version>2.2</version>
+                      <executions>
+                          <execution>
+                              <id>attach-sources-no-fork</id>
+                              <inherited>true</inherited>
+                              <goals>
+                                  <goal>jar-no-fork</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+              </plugins>
+          </build>
+      </profile>
+  </profiles>
+
 </project>

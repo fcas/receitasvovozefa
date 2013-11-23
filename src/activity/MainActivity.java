@@ -1,4 +1,4 @@
-package com.receitasvovozefa.activity;
+package activity;
 
 import android.app.Activity;
 import android.content.Intent;

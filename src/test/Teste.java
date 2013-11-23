@@ -1,22 +1,19 @@
-package com.receitasvovozefa.test;
-
-
+package test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
-import junit.framework.TestCase;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
-import com.example.teste.R;
-import com.receitasvovozefa.activity.MainActivity;
-
+import activity.MainActivity;
 import android.app.Activity;
 
+import com.example.teste.R;
+
 @RunWith(RobolectricTestRunner.class)
-public class Teste extends TestCase {
+public class Teste  {
 	
 	@Test
 	public void test() throws Exception{

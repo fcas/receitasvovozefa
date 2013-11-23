@@ -5,9 +5,9 @@ env:
 
 before_install:
 
-- wget http://dl.google.com/android/android-sdk_r18-linux.tgz
-- tar -zxf android-sdk_r18-linux.tgz
-- export ANDROID_HOME=~/builds/leviwilson/android-travis-ci-example/android-sdk-linux
+- wget http://dl.google.com/android/adt/adt-bundle-linux-x86_64-20131030.zip
+- unzip adt-bundle-linux-x86_64-20131030.zip
+- export ANDROID_HOME=$PWD/adt-bundle-linux-x86_64-20131030/sdk
 - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 
 

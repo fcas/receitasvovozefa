@@ -7,19 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>apk</packaging>
   <name>android-travis-ci-example</name>
-
-  <properties>
-    <platform.version> 2.3.3
-    </platform.version>
-  </properties>
-
   <dependencies>
-    <dependency>
-      <groupId>com.google.android</groupId>
-      <artifactId>android</artifactId>
-      <version>${platform.version}</version>
-      <scope>provided</scope>
-    </dependency>
+	<dependency>
+                     <groupId>com.google.android</groupId>
+                        <artifactId>android</artifactId>
+                        <version>4.1.1.4</version>
+                </dependency>  
+
 
     <dependency>
       <groupId>org.hamcrest</groupId>

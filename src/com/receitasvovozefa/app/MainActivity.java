@@ -1,4 +1,6 @@
-package com.example.teste;
+package com.receitasvovozefa.app;
+
+import com.example.teste.R;
 
 import android.os.Bundle;
 import android.app.Activity;

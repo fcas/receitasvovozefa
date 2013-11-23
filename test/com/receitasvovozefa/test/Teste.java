@@ -1,4 +1,4 @@
-package com.example.teste;
+package com.receitasvovozefa.test;
 
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -9,6 +9,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
+
+import com.example.teste.R;
+import com.receitasvovozefa.app.MainActivity;
 
 import android.app.Activity;
 

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.0" branch-rate="1.0" lines-covered="0" lines-valid="114" branches-covered="0" branches-valid="0" complexity="1.0" version="1.9.4.1" timestamp="1385221216833">
+<coverage line-rate="0.0" branch-rate="1.0" lines-covered="0" lines-valid="114" branches-covered="0" branches-valid="0" complexity="1.0" version="1.9.4.1" timestamp="1385230165097">
 	<sources>
-		<source>/root/git/fcas/target/generated-sources/extracted-dependencies/src/main/java</source>
+		<source>/root/git/fcas/receitasvovozefa/gen</source>
+		<source>/root/git/fcas/receitasvovozefa/src</source>
 		<source>--source</source>
-		<source>/root/git/fcas/gen</source>
-		<source>/root/git/fcas/target/generated-sources/aidl</source>
-		<source>/root/git/fcas/src</source>
+		<source>/root/git/fcas/receitasvovozefa/target/generated-sources/extracted-dependencies/src/main/java</source>
+		<source>/root/git/fcas/receitasvovozefa/target/generated-sources/aidl</source>
 	</sources>
 	<packages>
 		<package name="activity" line-rate="0.0" branch-rate="1.0" complexity="1.0">

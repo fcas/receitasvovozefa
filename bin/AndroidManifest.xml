@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE RelativeLayout>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.teste"
     android:versionCode="1"
@@ -21,6 +22,26 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.teste.MinhasReceitas"
+            android:label="@string/title_activity_minhas_receitas" >
+        </activity>
+        <activity
+            android:name="com.example.teste.BuscarReceitas"
+            android:label="@string/title_activity_buscar_receitas" >
+        </activity>
+        <activity
+            android:name="com.example.teste.Compartilhar"
+            android:label="@string/title_activity_compartilhar" >
+        </activity>
+        <activity
+            android:name="com.example.teste.ListaReceitas"
+            android:label="@string/title_activity_lista_receitas" >
+        </activity>
+        <activity
+            android:name="com.example.teste.Splash"
+            android:label="@string/title_activity_splash" >
         </activity>
     </application>
 

@@ -1,0 +1,182 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.ufrn.tes</groupId>
+  <artifactId>ReceitasVovoZefa</artifactId>
+  <version>1.0</version>
+
+	<dependencies>
+
+		<dependency>
+                        <groupId>com.uphyca</groupId>
+                        <artifactId>android-junit4</artifactId>
+                        <version>0.3</version>
+                </dependency>
+
+
+		<dependency>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                        <version>4.11</version>
+                </dependency>
+
+		 <dependency>
+                      <groupId>com.google.android</groupId>
+                      <artifactId>android-test</artifactId>
+                      <version>2.3.3</version>
+                 </dependency>
+
+
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>4.1.1.4</version>
+		</dependency>
+
+		<dependency>
+		      <groupId>org.hamcrest</groupId>
+		      <artifactId>hamcrest-all</artifactId>
+		      <version>1.1</version>
+		      <scope>test</scope>
+	    </dependency>
+
+	    <dependency>
+		      <groupId>org.mockito</groupId>
+		      <artifactId>mockito-all</artifactId>
+		      <version>1.8.5</version>
+		      <scope>test</scope>
+	    </dependency>
+
+		<dependency>
+			<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+			<artifactId>android-maven-plugin</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+
+		<dependency>
+  			<groupId>org.robolectric</groupId>
+  			<artifactId>robolectric</artifactId>
+  			<version>2.2</version>
+ 			 <classifier>jar-with-dependencies</classifier>
+		</dependency>
+                        
+	</dependencies>
+
+<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
+<build>
+	<sourceDirectory>.</sourceDirectory>
+	  <outputDirectory>target</outputDirectory>
+	<defaultGoal>install</defaultGoal>
+
+   <pluginManagement>
+        <plugins>
+
+		<plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>cobertura-maven-plugin</artifactId>
+		    <version>2.5.2</version>
+		    <configuration>
+		        <format>xml</format>
+		        <maxmem>256m</maxmem>
+		        <aggregate>true</aggregate>
+			</configuration>
+		</plugin>
+		<plugin>
+                    <groupId>org.eluder.coveralls</groupId>
+                    <artifactId>coveralls-maven-plugin</artifactId>
+                    <version>2.0.1</version>
+                    <configuration>
+                        <repoToken>HcNeceT8HzMU6X2lXeUBkohLke0WCqzlW</repoToken>
+			<sourceDirectories>
+				<List>src/</List>
+				<List>src/test/</List>
+				<List>gen/</List>
+			</sourceDirectories>
+		    </configuration>
+                </plugin>
+
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>3.7.0</version>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+
+	<plugins>
+		<plugin>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <version>3.0</version>
+		        <configuration>
+		            <source>1.7</source>
+		            <target>1.7</target>
+			 <includes>
+                            <include>src/activities/*.java</include>
+                            <include>gen/com/example/receitasvovozefa/*.java</include>
+                            <include>src/test/*.java</include>
+                        </includes>
+			 </configuration>
+		    </plugin>
+
+		<plugin>
+	            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+	            <artifactId>maven-android-plugin</artifactId>
+	            <configuration>
+			<androidManifestFile>AndroidManifest.xml</androidManifestFile>
+	                <assetsDirectory>ignored</assetsDirectory>
+	                <resourceDirectory>res</resourceDirectory>
+	                <nativeLibrariesDirectory>ignored</nativeLibrariesDirectory>                
+			<sdk>
+	                    <path>${env.ANDROID_HOME}</path>
+	                    <platform>${android.platform}</platform>
+	                </sdk>
+	                    <undeployBeforeDeploy>false</undeployBeforeDeploy>>
+		                <extensions>true</extensions>
+		             <deleteConflictingFiles>true</deleteConflictingFiles>
+        	    </configuration>
+	            <extensions>true</extensions>
+        	</plugin>
+
+		<plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>build-helper-maven-plugin</artifactId>
+		    <executions>
+		        <execution>
+		            <phase>generate-sources</phase>
+		            <goals><goal>add-source</goal></goals>
+		            <configuration>
+		                <sources>
+		                     <source>gen</source>
+                		</sources>
+		            </configuration>
+		        </execution>
+		    </executions>
+		</plugin>
+ 
+		<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-jar-plugin</artifactId>
+		    <executions>
+		        <execution>
+		            <id>default-jar</id>
+		            <phase>package</phase>
+		            <goals>
+		                <goal>jar</goal>
+		            </goals>
+	            <configuration>
+        	        <excludes>
+                	    <exclude>gen/com/example/receitasvovozefa/*.class</exclude>
+	      	        </excludes>
+	            </configuration>
+		        </execution>
+			    </executions>
+		</plugin>
+	</plugins>
+</build>
+</project>

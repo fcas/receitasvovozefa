@@ -11,7 +11,7 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
 import com.example.teste.R;
-import com.receitasvovozefa.app.MainActivity;
+import com.receitasvovozefa.activity.MainActivity;
 
 import android.app.Activity;
 

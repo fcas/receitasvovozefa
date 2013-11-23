@@ -3,7 +3,7 @@
 	<classpathentry exported="true" kind="lib" path="/home/felipe/lib/robolectric-2.2-jar-with-dependencies.jar"/>
 	<classpathentry excluding="test/" kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="src" output="target/test-classes" path="src/test"/>
+	<classpathentry kind="src" output="target/test-classes" path="test"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>

@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
 		setButtons();
 	}
 
-	private void setButtons() {
+	public void setButtons() {
 		button_receitas = (Button) findViewById(R.id.button_minhas_receitas);
 		button_receitas.setOnClickListener(new View.OnClickListener() {
 
@@ -90,5 +90,47 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.minhas_receitas, menu);
 		return true;
 	}
+
+	public Button getButton_receitas() {
+		return button_receitas;
+	}
+
+	public void setButton_receitas(Button button_receitas) {
+		this.button_receitas = button_receitas;
+	}
+
+	public Button getButton_compartilhar() {
+		return button_compartilhar;
+	}
+
+	public void setButton_compartilhar(Button button_compartilhar) {
+		this.button_compartilhar = button_compartilhar;
+	}
+
+	public Button getButton_buscar() {
+		return button_buscar;
+	}
+
+	public void setButton_buscar(Button button_buscar) {
+		this.button_buscar = button_buscar;
+	}
+
+	public Button getButton_logoff() {
+		return button_logoff;
+	}
+
+	public void setButton_logoff(Button button_logoff) {
+		this.button_logoff = button_logoff;
+	}
+
+	public Button getButton_sair() {
+		return button_sair;
+	}
+
+	public void setButton_sair(Button button_sair) {
+		this.button_sair = button_sair;
+	}
+	
+	
 
 }

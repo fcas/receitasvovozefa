@@ -9,7 +9,7 @@ import com.example.teste.R;
 public class ListaReceitas extends Activity {
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lista_receitas);
 	}
